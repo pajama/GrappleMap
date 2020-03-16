@@ -39,9 +39,9 @@ vruilibs = ["GL", "GLU", "ftgl", "Vrui.g++-3", "Geometry.g++-3", "GLGeometry.g++
 video = env.Object(['video_player.cpp', 'video_monitor.cpp'])
 
 glfw_editor   = env.Program('grapplemap-glfw-editor', ['glfw_editor.cpp', rendering, common], LIBS=guilibs+['boost_regex'])
-vr_editor     = env.Program('grapplemap-vr-editor', ['vr_editor.cpp', 'vr_joint_editor.cpp', 'vr_joint_browser.cpp', 'VruiXine.cpp', rendering, common, video], LIBS=vruilibs+['xine', 'boost_regex'])
+#vr_editor     = env.Program('grapplemap-vr-editor', ['vr_editor.cpp', 'vr_joint_editor.cpp', 'vr_joint_browser.cpp', 'VruiXine.cpp', rendering, common, video], LIBS=vruilibs+['xine', 'boost_regex'])
 glfw_playback = env.Program('grapplemap-glfw-playback', ['glfw_playback.cpp', rendering, common], LIBS=guilibs)
-vr_playback   = env.Program('grapplemap-vr-playback', ['vr_playback.cpp', rendering, common], LIBS=vruilibs)
+#vr_playback   = env.Program('grapplemap-vr-playback', ['vr_playback.cpp', rendering, common], LIBS=vruilibs)
 indexer       = env.Program('grapplemap-indexer', ['indexer.cpp', common], LIBS=cmdlibs)
 todot         = env.Program('grapplemap-todot', ['todot.cpp', common], LIBS=cmdlibs)
 dbtojs        = env.Program('grapplemap-dbtojs', ['dbtojs.cpp', common], LIBS=cmdlibs)
