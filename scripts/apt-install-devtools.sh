@@ -12,5 +12,4 @@ apt-get install --no-install-recommends -yqq \
   libxine2-dev \
   libglfw3-dev \
   libosmesa6-dev \
-  ffmpeg \
-  emscripten
+  ffmpeg
